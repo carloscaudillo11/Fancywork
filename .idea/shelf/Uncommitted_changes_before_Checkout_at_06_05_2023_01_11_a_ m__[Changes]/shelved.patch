@@ -1,0 +1,289 @@
+Index: app/src/main/java/com/example/fancywork/screensLogin/login/LoginState.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/login/LoginState.kt b/app/src/main/java/com/example/fancywork/screens/login/LoginState.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/login/LoginState.kt
+rename to app/src/main/java/com/example/fancywork/screens/login/LoginState.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/login/LoginState.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/login/LoginState.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.login
++package com.example.fancywork.screens.login
+ 
+ 
+ data class LoginState(
+Index: app/src/main/java/com/example/fancywork/screensLogin/login/LoginScreen.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/login/LoginScreen.kt b/app/src/main/java/com/example/fancywork/screens/login/LoginScreen.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/login/LoginScreen.kt
+rename to app/src/main/java/com/example/fancywork/screens/login/LoginScreen.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/login/LoginScreen.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/login/LoginScreen.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.login
++package com.example.fancywork.screens.login
+ 
+ import androidx.compose.foundation.BorderStroke
+ import androidx.compose.foundation.Image
+Index: app/src/main/java/com/example/fancywork/screensLogin/login/LoginViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/login/LoginViewModel.kt b/app/src/main/java/com/example/fancywork/screens/login/LoginViewModel.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/login/LoginViewModel.kt
+rename to app/src/main/java/com/example/fancywork/screens/login/LoginViewModel.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/login/LoginViewModel.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/login/LoginViewModel.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.login
++package com.example.fancywork.screens.login
+ 
+ import android.util.Patterns
+ import androidx.compose.runtime.MutableState
+Index: app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeScreen.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeScreen.kt b/app/src/main/java/com/example/fancywork/screens/welcome/WelcomeScreen.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeScreen.kt
+rename to app/src/main/java/com/example/fancywork/screens/welcome/WelcomeScreen.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeScreen.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/welcome/WelcomeScreen.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.welcome
++package com.example.fancywork.screens.welcome
+ 
+ 
+ import android.util.Log
+@@ -249,10 +249,9 @@
+         )
+     }
+ 
+-
+     if (state.value.successRegister) {
+         navigate.invoke()
+     }
+-
+ }
+ 
++
+Index: app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeState.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeState.kt b/app/src/main/java/com/example/fancywork/screens/welcome/WelcomeState.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeState.kt
+rename to app/src/main/java/com/example/fancywork/screens/welcome/WelcomeState.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeState.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/welcome/WelcomeState.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.welcome
++package com.example.fancywork.screens.welcome
+ 
+ data class WelcomeState(
+     val successRegister: Boolean = false,
+Index: app/src/main/java/com/example/fancywork/screensLogin/register/RegisterViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/register/RegisterViewModel.kt b/app/src/main/java/com/example/fancywork/screens/register/RegisterViewModel.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/register/RegisterViewModel.kt
+rename to app/src/main/java/com/example/fancywork/screens/register/RegisterViewModel.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/register/RegisterViewModel.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/register/RegisterViewModel.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.register
++package com.example.fancywork.screens.register
+ 
+ import androidx.compose.runtime.MutableState
+ import androidx.compose.runtime.mutableStateOf
+Index: app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeViewModel.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeViewModel.kt b/app/src/main/java/com/example/fancywork/screens/welcome/WelcomeViewModel.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeViewModel.kt
+rename to app/src/main/java/com/example/fancywork/screens/welcome/WelcomeViewModel.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/welcome/WelcomeViewModel.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/welcome/WelcomeViewModel.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.welcome
++package com.example.fancywork.screens.welcome
+ 
+ 
+ import androidx.compose.runtime.MutableState
+Index: app/src/main/java/com/example/fancywork/screensLogin/register/RegisterScreen.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/register/RegisterScreen.kt b/app/src/main/java/com/example/fancywork/screens/register/RegisterScreen.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/register/RegisterScreen.kt
+rename to app/src/main/java/com/example/fancywork/screens/register/RegisterScreen.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/register/RegisterScreen.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/register/RegisterScreen.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.register
++package com.example.fancywork.screens.register
+ 
+ 
+ import androidx.compose.foundation.background
+@@ -10,7 +10,10 @@
+ import androidx.compose.foundation.text.KeyboardOptions
+ import androidx.compose.foundation.verticalScroll
+ import androidx.compose.material.icons.Icons
+-import androidx.compose.material.icons.filled.*
++import androidx.compose.material.icons.filled.ArrowBack
++import androidx.compose.material.icons.filled.Email
++import androidx.compose.material.icons.filled.Lock
++import androidx.compose.material.icons.filled.Phone
+ import androidx.compose.material.icons.outlined.Lock
+ import androidx.compose.material3.*
+ import androidx.compose.runtime.*
+@@ -95,7 +98,7 @@
+                     }
+                 ) {
+                     Icon(
+-                        imageVector = Icons.Filled.ArrowBack,
++                        Icons.Filled.ArrowBack,
+                         contentDescription = "Back Icon",
+                         modifier = Modifier.size(30.dp),
+                         tint = MaterialTheme.colorScheme.onSurface
+@@ -230,7 +233,11 @@
+                         registerViewModel.onUserPasswordChange(it)
+                         validatePass(state.value.userPassword)
+                     },
+-                    label = { Text("contraseña") },
++                    label = {
++                        Text(
++                            text = "contraseña"
++                        )
++                    },
+                     keyboardOptions = KeyboardOptions(
+                         keyboardType = KeyboardType.Password,
+                         capitalization = KeyboardCapitalization.None,
+@@ -247,7 +254,7 @@
+                         ) {
+                             Icon(
+                                 imageVector = if (passwordVisibility) {
+-                                    Icons.Filled.Lock
++                                    Icons.Default.Lock
+                                 } else {
+                                     Icons.Outlined.Lock
+                                 },
+@@ -348,11 +355,11 @@
+         )
+     }
+ 
+-    if(state.value.successRegister){
++    if (state.value.successRegister) {
+         registerViewModel.registerDb()
+     }
+ 
+-    if(state.value.successRegisterDB){
++    if (state.value.successRegisterDB) {
+         navigateMain.invoke()
+     }
+ 
+Index: app/src/main/java/com/example/fancywork/screensLogin/register/RegisterState.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/screensLogin/register/RegisterState.kt b/app/src/main/java/com/example/fancywork/screens/register/RegisterState.kt
+rename from app/src/main/java/com/example/fancywork/screensLogin/register/RegisterState.kt
+rename to app/src/main/java/com/example/fancywork/screens/register/RegisterState.kt
+--- a/app/src/main/java/com/example/fancywork/screensLogin/register/RegisterState.kt	
++++ b/app/src/main/java/com/example/fancywork/screens/register/RegisterState.kt	
+@@ -1,4 +1,4 @@
+-package com.example.fancywork.screensLogin.register
++package com.example.fancywork.screens.register
+ 
+ data class RegisterState(
+     val userName: String = "",
+Index: app/src/main/java/com/example/fancywork/navegacion/DestinationsMenu.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/fancywork/navegacion/DestinationsMenu.kt b/app/src/main/java/com/example/fancywork/navegation/Destinations.kt
+rename from app/src/main/java/com/example/fancywork/navegacion/DestinationsMenu.kt
+rename to app/src/main/java/com/example/fancywork/navegation/Destinations.kt
+--- a/app/src/main/java/com/example/fancywork/navegacion/DestinationsMenu.kt	
++++ b/app/src/main/java/com/example/fancywork/navegation/Destinations.kt	
+@@ -1,47 +1,52 @@
+-package com.example.fancywork.navegacion
++package com.example.fancywork.navegation
+ 
+ import androidx.compose.material.icons.Icons
+ import androidx.compose.material.icons.outlined.*
+-import androidx.compose.material.icons.rounded.AccountCircle
+ import androidx.compose.ui.graphics.vector.ImageVector
+ 
+-sealed class DestinationsMenu(
++sealed class Destinations(
+     val route: String,
+     val title: String,
+     val icon: ImageVector
+ ) {
+-    object Home : DestinationsMenu(
++    object Home : Destinations(
+         "home", "Inicio",
+         Icons.Outlined.Home
+     )
+ 
+-    object Search : DestinationsMenu(
++    object Search : Destinations(
+         "search", "Buscar",
+         Icons.Outlined.Search
+     )
+ 
+-    object Post : DestinationsMenu(
++    object Post : Destinations(
+         "post", "Publicar",
+         Icons.Outlined.Add
+     )
+ 
+-    object Notifications : DestinationsMenu(
++    object Notifications : Destinations(
+         "notifications", "Notificaciones",
+         Icons.Outlined.Notifications
+     )
+ 
+-    object Profile : DestinationsMenu(
++    object Profile : Destinations(
+         "profile", "Perfil",
+         Icons.Outlined.AccountCircle
+     )
+ 
+-    object Settings : DestinationsMenu(
++    object Settings : Destinations(
+         "settings", "Configuración",
+         Icons.Outlined.Settings
+     )
+ 
+-    object Help : DestinationsMenu(
++    object Help : Destinations(
+         "help", "Ayuda y comentarios",
+         Icons.Outlined.Info
+     )
++
++    object SingOut : Destinations(
++        "welcome", "Cerrar Sesión",
++        Icons.Outlined.ExitToApp
++    )
++
+ }
+diff --git a/app/src/main/java/com/example/fancywork/components/HomeTopAppBar.kt b/app/src/main/java/com/example/fancywork/components/MainTopAppBar.kt
+rename from app/src/main/java/com/example/fancywork/components/HomeTopAppBar.kt
+rename to app/src/main/java/com/example/fancywork/components/MainTopAppBar.kt

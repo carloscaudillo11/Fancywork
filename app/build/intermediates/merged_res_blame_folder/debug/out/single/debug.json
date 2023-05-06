@@ -1,0 +1,282 @@
+[
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-mdpi_ic_logo_foreground.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-mdpi\\ic_logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_bold_italic.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_bold_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxhdpi_ic_logo.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxhdpi\\ic_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_hello.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\hello.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_ic_google_logo.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\ic_google_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_outline_email_24.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\outline_email_24.xml"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_regular.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_regular.ttf"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_light.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_light.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_thin_italic.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_thin_italic.ttf"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_ic_facebook_logo.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\ic_facebook_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-hdpi_ic_logo_round.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-hdpi\\ic_logo_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_italic.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_black.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_black.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_bold.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_bold.ttf"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-hdpi_ic_logo.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-hdpi\\ic_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_medium_italic.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_medium_italic.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xhdpi_ic_logo_round.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xhdpi\\ic_logo_round.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-mdpi_ic_logo_round.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-mdpi\\ic_logo_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxxhdpi_ic_logo_round.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxxhdpi\\ic_logo_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-anydpi-v26_ic_logo.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-anydpi-v26\\ic_logo.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_thin.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_thin.ttf"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxxhdpi_ic_logo.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxxhdpi\\ic_logo.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_black_italic.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_black_italic.ttf"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xhdpi_ic_logo.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xhdpi\\ic_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xhdpi_ic_logo_foreground.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xhdpi\\ic_logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-hdpi_ic_logo_foreground.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-hdpi\\ic_logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_icono.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\icono.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxhdpi_ic_logo_round.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxhdpi\\ic_logo_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxxhdpi_ic_logo_foreground.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxxhdpi\\ic_logo_foreground.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-anydpi-v26_ic_logo_round.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-anydpi-v26\\ic_logo_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xxhdpi_ic_logo_foreground.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xxhdpi\\ic_logo_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "com.example.fancywork.app-main-65:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_medium.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_medium.ttf"
+    },
+    {
+        "merged": "com.example.fancywork.app-merged_res-63:/drawable_launcher.png.flat",
+        "source": "com.example.fancywork.app-main-65:/drawable/launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\mipmap-mdpi_ic_logo.png.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\mipmap-mdpi\\ic_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-merged_res-63:\\font_roboto_light_italic.ttf.flat",
+        "source": "C:\\Users\\Charl\\.gradle\\daemon\\8.0\\com.example.fancywork.app-main-65:\\font\\roboto_light_italic.ttf"
+    }
+]

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "953963664108",
+    "project_id": "fancyapp-93ae5",
+    "storage_bucket": "fancyapp-93ae5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953963664108:android:4d925701ab3632bd020bc9",
+        "android_client_info": {
+          "package_name": "com.example.fancywork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953963664108-7cb87pn8g2orbi07kagsiuginipbaknh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmw6D1epIr8XnzPAxfTRCWl2ZcpxRzjcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953963664108-7cb87pn8g2orbi07kagsiuginipbaknh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

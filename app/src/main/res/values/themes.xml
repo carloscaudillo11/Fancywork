@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.FancyWork" parent="android:Theme.Material.Light.NoActionBar" >
+        <!-- Primary brand color. -->
+
+        <!-- Customize your theme here. -->
+    </style>
+
+
+</resources>

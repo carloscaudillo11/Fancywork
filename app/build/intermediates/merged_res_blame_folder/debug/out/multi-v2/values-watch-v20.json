@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.fancywork.app-mergeDebugResources-61:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.fancywork.app-mergeDebugResources-58:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Charl\\.gradle\\caches\\transforms-3\\cc68c06d8eadedb52ca99a98ad41dc4d\\transformed\\play-services-auth-20.5.0\\res\\values-watch-v20\\values.xml",

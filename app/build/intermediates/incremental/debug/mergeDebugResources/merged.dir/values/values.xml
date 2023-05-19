@@ -2,14 +2,6 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
     <attr format="reference" name="coordinatorLayoutStyle"/>
     <attr format="reference" name="nestedScrollViewStyle"/>
-    <attr format="enum" name="splitLayoutDirection">
-        <enum name="locale" value="0"/>
-        <enum name="ltr" value="1"/>
-        <enum name="rtl" value="2"/>
-    </attr>
-    <attr format="dimension" name="splitMinSmallestWidth"/>
-    <attr format="dimension" name="splitMinWidth"/>
-    <attr format="float" name="splitRatio"/>
     <color name="androidx_core_ripple_material_light">#1f000000</color>
     <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
     <color name="black">#FF000000</color>
@@ -99,7 +91,6 @@
     <item name="accessibility_custom_action_8" type="id"/>
     <item name="accessibility_custom_action_9" type="id"/>
     <item name="androidx_compose_ui_view_composition_context" type="id"/>
-    <item name="androidx_window_activity_scope" type="id"/>
     <item name="coil_request_manager" type="id"/>
     <item name="compose_view_saveable_id_tag" type="id"/>
     <item name="consume_window_insets_tag" type="id"/>
@@ -136,10 +127,6 @@
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
     <string name="app_name">FancyWork</string>
-    <string name="bottom_sheet_collapse_description">Collapse bottom sheet</string>
-    <string name="bottom_sheet_dismiss_description">Dismiss bottom sheet</string>
-    <string name="bottom_sheet_drag_handle_description">Drag handle</string>
-    <string name="bottom_sheet_expand_description">Expand bottom sheet</string>
     <string name="call_notification_answer_action">Answer</string>
     <string name="call_notification_answer_video_action">Video</string>
     <string name="call_notification_decline_action">Decline</string>
@@ -169,41 +156,6 @@
     <string name="common_signin_button_text">Sign in</string>
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="copy_toast_msg">Link copied to clipboard</string>
-    <string name="date_input_headline">Entered date</string>
-    <string name="date_input_headline_description">Entered date: %1$s</string>
-    <string name="date_input_invalid_for_pattern">Date does not match expected pattern: %1$s</string>
-    <string name="date_input_invalid_not_allowed">Date not allowed: %1$s</string>
-    <string name="date_input_invalid_year_range">
-        Date out of expected year range %1$s - %2$s
-    </string>
-    <string name="date_input_label">Date</string>
-    <string name="date_input_no_input_description">None</string>
-    <string name="date_input_title">Select date</string>
-    <string name="date_picker_headline">"Selected date"</string>
-    <string name="date_picker_headline_description">Current selection: %1$s</string>
-    <string name="date_picker_navigate_to_year_description">Navigate to year %1$s</string>
-    <string name="date_picker_no_selection_description">None</string>
-    <string name="date_picker_scroll_to_earlier_years">Scroll to show earlier years</string>
-    <string name="date_picker_scroll_to_later_years">Scroll to show later years</string>
-    <string name="date_picker_switch_to_calendar_mode">Switch to calendar input mode</string>
-    <string name="date_picker_switch_to_day_selection">
-        "Swipe to select a year, or tap to switch back to selecting a day"
-    </string>
-    <string name="date_picker_switch_to_input_mode">Switch to text input mode</string>
-    <string name="date_picker_switch_to_next_month">"Change to next month"</string>
-    <string name="date_picker_switch_to_previous_month">"Change to previous month"</string>
-    <string name="date_picker_switch_to_year_selection">"Switch to selecting a year"</string>
-    <string name="date_picker_title">"Select date"</string>
-    <string name="date_picker_today_description">Today</string>
-    <string name="date_picker_year_picker_pane_title">Year picker visible</string>
-    <string name="date_range_input_invalid_range_input">Invalid date range input</string>
-    <string name="date_range_input_title">Enter dates</string>
-    <string name="date_range_picker_day_in_range">In range</string>
-    <string name="date_range_picker_end_headline">End date</string>
-    <string name="date_range_picker_scroll_to_next_month">Scroll to show the next month</string>
-    <string name="date_range_picker_scroll_to_previous_month">Scroll to show the previous month</string>
-    <string name="date_range_picker_start_headline">Start date</string>
-    <string name="date_range_picker_title">Select dates</string>
     <string name="default_error_message">"Invalid input"</string>
     <string name="default_popup_window_title" ns2:ignore="ExtraTranslation">"Pop-Up Window"</string>
     <string name="default_web_client_id" translatable="false">953963664108-7cb87pn8g2orbi07kagsiuginipbaknh.apps.googleusercontent.com</string>
@@ -233,30 +185,13 @@
     <string name="project_id" translatable="false">fancyapp-93ae5</string>
     <string name="range_end">"Range end"</string>
     <string name="range_start">"Range start"</string>
-    <string name="search_bar_search">Search</string>
     <string name="selected">Selected</string>
-    <string name="snackbar_dismiss">Dismiss</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="success_login">Successfully logged in</string>
     <string name="success_registration">Successfully registered new user</string>
-    <string name="suggestions_available">Suggestions below</string>
     <string name="switch_role">Switch</string>
     <string name="tab">Tab</string>
     <string name="template_percent"><ns1:g id="percentage">%1$d</ns1:g> percent.</string>
-    <string name="time_picker_am">AM</string>
-    <string name="time_picker_hour">Hour</string>
-    <string name="time_picker_hour_24h_suffix">%1$d hours</string>
-    <string name="time_picker_hour_selection">Select hour</string>
-    <string name="time_picker_hour_suffix">%1$d o\'clock</string>
-    <string name="time_picker_hour_text_field">for hour</string>
-    <string name="time_picker_minute">Minute</string>
-    <string name="time_picker_minute_selection">Select minutes</string>
-    <string name="time_picker_minute_suffix">%1$d minutes</string>
-    <string name="time_picker_minute_text_field">for minutes</string>
-    <string name="time_picker_period_toggle_description">Select AM or PM</string>
-    <string name="time_picker_pm">PM</string>
-    <string name="tooltip_long_press_label">Show tooltip</string>
-    <string name="tooltip_pane_description">Tooltip</string>
     <style name="DialogWindowTheme">
         <item name="android:windowClipToOutline">false</item>
     </style>
@@ -288,22 +223,12 @@
     <style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
         <item name="statusBarBackground">#000000</item>
     </style>
-    <declare-styleable name="ActivityFilter">
-        
-        <attr format="string" name="activityName"/>
-        
-        <attr format="string" name="activityAction"/>
-    </declare-styleable>
     <declare-styleable name="ActivityNavigator">
         <attr name="android:name"/>
         <attr format="string" name="action"/>
         <attr format="string" name="data"/>
         <attr format="string" name="dataPattern"/>
         <attr format="string" name="targetPackage"/>
-    </declare-styleable>
-    <declare-styleable name="ActivityRule">
-        
-        <attr format="boolean" name="alwaysExpand"/>
     </declare-styleable>
     <declare-styleable name="AnimatedStateListDrawableCompat">
         
@@ -370,70 +295,76 @@
 
         
         <attr name="layout_anchorGravity">
-            
+            <!-- Push object to the top of its container, not changing its size. -->
             <flag name="top" value="0x30"/>
-            
+            <!-- Push object to the bottom of its container, not changing its size. -->
             <flag name="bottom" value="0x50"/>
-            
+            <!-- Push object to the left of its container, not changing its size. -->
             <flag name="left" value="0x03"/>
-            
+            <!-- Push object to the right of its container, not changing its size. -->
             <flag name="right" value="0x05"/>
-            
+            <!-- Place object in the vertical center of its container, not changing its size. -->
             <flag name="center_vertical" value="0x10"/>
-            
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
             <flag name="fill_vertical" value="0x70"/>
-            
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
             <flag name="center_horizontal" value="0x01"/>
-            
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
             <flag name="fill_horizontal" value="0x07"/>
-            
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
             <flag name="center" value="0x11"/>
-            
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
             <flag name="fill" value="0x77"/>
-            
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the vertical gravity: a top gravity will clip the bottom
+                 edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
             <flag name="clip_vertical" value="0x80"/>
-            
+            <!-- Additional option that can be set to have the left and/or right edges of
+                 the child clipped to its container's bounds.
+                 The clip will be based on the horizontal gravity: a left gravity will clip the right
+                 edge, a right gravity will clip the left edge, and neither will clip both edges. -->
             <flag name="clip_horizontal" value="0x08"/>
-            
+            <!-- Push object to the beginning of its container, not changing its size. -->
             <flag name="start" value="0x00800003"/>
-            
+            <!-- Push object to the end of its container, not changing its size. -->
             <flag name="end" value="0x00800005"/>
         </attr>
 
         
         <attr format="enum" name="layout_insetEdge">
-            
+            <!-- Don't inset. -->
             <enum name="none" value="0x0"/>
-            
+            <!-- Inset the top edge. -->
             <enum name="top" value="0x30"/>
-            
+            <!-- Inset the bottom edge. -->
             <enum name="bottom" value="0x50"/>
-            
+            <!-- Inset the left edge. -->
             <enum name="left" value="0x03"/>
-            
+            <!-- Inset the right edge. -->
             <enum name="right" value="0x05"/>
-            
+            <!-- Inset the start edge. -->
             <enum name="start" value="0x00800003"/>
-            
+            <!-- Inset the end edge. -->
             <enum name="end" value="0x00800005"/>
         </attr>
         
         <attr name="layout_dodgeInsetEdges">
-            
+            <!-- Don't dodge any edges -->
             <flag name="none" value="0x0"/>
-            
+            <!-- Dodge the top inset edge. -->
             <flag name="top" value="0x30"/>
-            
+            <!-- Dodge the bottom inset edge. -->
             <flag name="bottom" value="0x50"/>
-            
+            <!-- Dodge the left inset edge. -->
             <flag name="left" value="0x03"/>
-            
+            <!-- Dodge the right inset edge. -->
             <flag name="right" value="0x05"/>
-            
+            <!-- Dodge the start inset edge. -->
             <flag name="start" value="0x00800003"/>
-            
+            <!-- Dodge the end inset edge. -->
             <flag name="end" value="0x00800005"/>
-            
+            <!-- Dodge all the inset edges. -->
             <flag name="all" value="0x77"/>
         </attr>
     </declare-styleable>
@@ -448,14 +379,23 @@
         <attr format="reference" name="fontProviderCerts"/>
         
         <attr name="fontProviderFetchStrategy">
-            
+            <!-- The blocking font fetch works as follows.
+              First, check the local cache, then if the requested font is not cached, request the
+              font from the provider and wait until it is finished.  You can change the length of
+              the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+              default typeface will be used instead. -->
             <enum name="blocking" value="0"/>
-            
+            <!-- The async font fetch works as follows.
+              First, check the local cache, then if the requeted font is not cached, trigger a
+              request the font and continue with layout inflation. Once the font fetch succeeds, the
+              target text view will be refreshed with the downloaded font data. The
+              fontProviderFetchTimeout will be ignored if async loading is specified. -->
             <enum name="async" value="1"/>
         </attr>
         
         <attr format="integer" name="fontProviderFetchTimeout">
-            
+            <!-- A special value for the timeout. In this case, the blocking font fetching will not
+              timeout and wait until a reply is received from the font provider. -->
             <enum name="forever" value="-1"/>
         </attr>
         
@@ -592,34 +532,6 @@
 
 <attr format="reference|string" name="scopeUris"/>
 </declare-styleable>
-    <declare-styleable name="SplitPairFilter">
-        
-        <attr format="string" name="primaryActivityName"/>
-        
-        <attr format="string" name="secondaryActivityName"/>
-        
-        <attr format="string" name="secondaryActivityAction"/>
-    </declare-styleable>
-    <declare-styleable name="SplitPairRule">
-        
-        <attr format="boolean" name="finishPrimaryWithSecondary"/>
-        
-        <attr format="boolean" name="finishSecondaryWithPrimary"/>
-        
-        <attr format="boolean" name="clearTop"/>
-        <attr name="splitRatio"/>
-        <attr name="splitMinWidth"/>
-        <attr name="splitMinSmallestWidth"/>
-        <attr name="splitLayoutDirection"/>
-    </declare-styleable>
-    <declare-styleable name="SplitPlaceholderRule">
-        
-        <attr format="string" name="placeholderActivityName"/>
-        <attr name="splitRatio"/>
-        <attr name="splitMinWidth"/>
-        <attr name="splitMinSmallestWidth"/>
-        <attr name="splitLayoutDirection"/>
-    </declare-styleable>
     <declare-styleable name="StateListDrawable">
         
         <attr name="android:visible"/>

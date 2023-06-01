@@ -1,6 +1,8 @@
 package com.example.fancywork.ui.navegation
 
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.ui.graphics.vector.ImageVector
 
@@ -11,7 +13,7 @@ sealed class Destinations(
 ) {
     object Home : Destinations(
         "home", "Inicio",
-        Icons.Outlined.Home
+        Icons.Filled.Home
     )
 
     object Search : Destinations(
@@ -19,38 +21,13 @@ sealed class Destinations(
         Icons.Outlined.Search
     )
 
-    object Post : Destinations(
-        "post", "Publicar",
-        Icons.Outlined.Add
-    )
-
     object Notifications : Destinations(
         "notifications", "Notificaciones",
         Icons.Outlined.Notifications
     )
 
-    object Profile : Destinations(
-        "profile", "Perfil",
-        Icons.Outlined.AccountCircle
+    object Menu : Destinations(
+        "Menu", "Menu",
+        Icons.Filled.Menu
     )
-
-    object Settings : Destinations(
-        "settings", "Configuración",
-        Icons.Outlined.Settings
-    )
-
-    object Help : Destinations(
-        "help", "Ayuda y comentarios",
-        Icons.Outlined.Info
-    )
-
-    object SingOut : Destinations(
-        "welcome", "Cerrar Sesión",
-        Icons.Outlined.ExitToApp
-    )
-    object Rate : Destinations(
-        "rate", "Califica la Aplicación",
-        Icons.Outlined.Star
-    )
-
 }

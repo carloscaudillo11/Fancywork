@@ -37,7 +37,6 @@ import com.example.fancywork.ui.components.RoundedButton
 import com.example.fancywork.ui.viewmodel.LoginViewModel
 
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun LoginScreen(
     loginViewModel: LoginViewModel,
@@ -63,11 +62,11 @@ fun LoginScreen(
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(if (darkTheme) Color.Black else Color.White)
+            .background(MaterialTheme.colorScheme.background)
             .systemBarsPadding()
     ) {
         Row(
-            modifier = Modifier.padding(16.dp),
+            modifier = Modifier.padding(10.dp),
             verticalAlignment = Alignment.CenterVertically,
         ) {
             IconButton(
@@ -94,7 +93,7 @@ fun LoginScreen(
             Surface(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(400.dp),
+                    .height(410.dp),
                 shape = RoundedCornerShape(
                     topStartPercent = 8,
                     topEndPercent = 8
@@ -107,7 +106,7 @@ fun LoginScreen(
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(16.dp),
+                        .padding(25.dp),
                     verticalArrangement = Arrangement.SpaceEvenly
                 ) {
                     Text(

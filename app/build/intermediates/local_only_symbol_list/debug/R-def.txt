@@ -11,6 +11,7 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable email
 drawable hello
 drawable ic_facebook_logo
 drawable ic_google_logo
@@ -18,6 +19,7 @@ drawable ic_launcher_background
 drawable icono
 drawable launcher
 drawable logo
+drawable no
 drawable outline_email_24
 font roboto_black
 font roboto_black_italic

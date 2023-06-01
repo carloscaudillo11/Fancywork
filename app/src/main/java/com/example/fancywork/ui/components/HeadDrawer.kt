@@ -23,6 +23,7 @@ import coil.compose.AsyncImage
 fun HeadDrawer(
     url: Any?,
     name: String?,
+    lastname: String?,
     email: String?
 ) {
     Column(
@@ -49,7 +50,7 @@ fun HeadDrawer(
             ) {
                 name?.let {
                     Text(
-                        text = it,
+                        text = "$it $lastname",
                         style = MaterialTheme.typography.bodyLarge.copy(
                             fontWeight = FontWeight.Medium
                         )

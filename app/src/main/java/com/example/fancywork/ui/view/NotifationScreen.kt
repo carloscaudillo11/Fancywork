@@ -15,17 +15,12 @@ import com.example.fancywork.ui.components.TopAppBar
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun NotificationScreen(
-    backStack: () -> Unit
-) {
+fun NotificationScreen() {
     val darkTheme = isSystemInDarkTheme()
     val scrollBehavior = TopAppBarDefaults
     Scaffold(
         topBar = {
             TopAppBar(
-                callback = {
-                    backStack.invoke()
-                },
                 scrollBehavior = scrollBehavior,
                 title = "Notificaciones"
             )

@@ -2,7 +2,6 @@ package com.example.fancywork.ui.view
 
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.text.ClickableText
@@ -20,7 +19,6 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusDirection
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.SpanStyle
@@ -34,7 +32,7 @@ import com.example.fancywork.ui.components.RoundedButton
 import com.example.fancywork.ui.components.ErrorDialog
 import com.example.fancywork.ui.viewmodel.RegisterViewModel
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun RegisterScreen(
     navigateLogin: () -> Unit,
@@ -42,11 +40,14 @@ fun RegisterScreen(
     navigateMain: () -> Unit
 ) {
     var isEmptyName by remember { mutableStateOf(false) }
+    var isEmptyLastName by remember { mutableStateOf(false) }
     var isEmptyEmail by remember { mutableStateOf(false) }
     var isEmptyPhone by remember { mutableStateOf(false) }
     var isEmptyPassword by remember { mutableStateOf(false) }
+    var isEmptyCity by remember { mutableStateOf(false) }
+    var isEmptyCountry by remember { mutableStateOf(false) }
+    var isEmptyState by remember { mutableStateOf(false) }
     var isEmptyConfirmPass by remember { mutableStateOf(false) }
-    val darkTheme = isSystemInDarkTheme()
     var passwordVisibility by remember { mutableStateOf(false) }
     var confirmPasswordVisibility by remember { mutableStateOf(false) }
     var isPhoneError by remember { mutableStateOf(false) }
@@ -61,6 +62,10 @@ fun RegisterScreen(
 
     fun validateName(text: String) {
         isEmptyName = text.isBlank()
+    }
+
+    fun validateLastName(text: String) {
+        isEmptyLastName = text.isBlank()
     }
 
     fun validateEmail(text: String) {
@@ -79,16 +84,28 @@ fun RegisterScreen(
         isEmptyConfirmPass = text.isBlank()
     }
 
+    fun validateCountry(text: String) {
+        isEmptyCountry = text.isBlank()
+    }
+
+    fun validateState(text: String) {
+        isEmptyState = text.isBlank()
+    }
+
+    fun validateCity(text: String) {
+        isEmptyCity = text.isBlank()
+    }
+
     Box(
         modifier = Modifier
             .fillMaxWidth()
-            .background(if (darkTheme) Color.Black else Color.White)
+            .background(MaterialTheme.colorScheme.background)
             .systemBarsPadding()
     ) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(16.dp)
+                .padding(10.dp)
                 .verticalScroll(rememberScrollState())
         ) {
             Row(
@@ -134,7 +151,111 @@ fun RegisterScreen(
                         registerViewModel.onUserNameChange(it)
                         validateName(state.value.userName)
                     },
-                    label = { Text("Nombre Completo") },
+                    label = { Text("Nombre") },
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text,
+                        imeAction = ImeAction.Next,
+                        capitalization = KeyboardCapitalization.Words
+                    ),
+                    keyboardActions = KeyboardActions(
+                        onNext = {
+                            focusManager.moveFocus(FocusDirection.Down)
+                        }
+                    ),
+                    visualTransformation = VisualTransformation.None
+                )
+
+                OutlinedTextField(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .semantics {
+                            validateLastName(state.value.userLastName)
+                        },
+                    value = state.value.userLastName,
+                    onValueChange = {
+                        registerViewModel.onUserLastNameChange(it)
+                        validateLastName(state.value.userLastName)
+                    },
+                    label = { Text("Apellido") },
+                    keyboardOptions = KeyboardOptions(
+                        keyboardType = KeyboardType.Text,
+                        imeAction = ImeAction.Next,
+                        capitalization = KeyboardCapitalization.Words
+                    ),
+                    keyboardActions = KeyboardActions(
+                        onNext = {
+                            focusManager.moveFocus(FocusDirection.Down)
+                        }
+                    ),
+                    visualTransformation = VisualTransformation.None
+                )
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween
+                ) {
+                    OutlinedTextField(
+                        modifier = Modifier
+                            .width(170.dp)
+                            .semantics {
+                                validateCountry(state.value.pais)
+                            },
+                        value = state.value.pais,
+                        onValueChange = {
+                            registerViewModel.onCountryChange(it)
+                            validateCountry(state.value.pais)
+                        },
+                        label = { Text("Pais") },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Text,
+                            imeAction = ImeAction.Next,
+                            capitalization = KeyboardCapitalization.Words
+                        ),
+                        keyboardActions = KeyboardActions(
+                            onNext = {
+                                focusManager.moveFocus(FocusDirection.Down)
+                            }
+                        ),
+                        visualTransformation = VisualTransformation.None
+                    )
+
+                    OutlinedTextField(
+                        modifier = Modifier
+                            .width(170.dp)
+                            .semantics {
+                                validateState(state.value.estado)
+                            },
+                        value = state.value.estado,
+                        onValueChange = {
+                            registerViewModel.onStateChange(it)
+                            validateState(state.value.estado)
+                        },
+                        label = { Text("Estado") },
+                        keyboardOptions = KeyboardOptions(
+                            keyboardType = KeyboardType.Text,
+                            imeAction = ImeAction.Next,
+                            capitalization = KeyboardCapitalization.Words
+                        ),
+                        keyboardActions = KeyboardActions(
+                            onNext = {
+                                focusManager.moveFocus(FocusDirection.Down)
+                            }
+                        ),
+                        visualTransformation = VisualTransformation.None
+                    )
+                }
+
+                OutlinedTextField(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .semantics {
+                            validateCity(state.value.ciudad)
+                        },
+                    value = state.value.ciudad,
+                    onValueChange = {
+                        registerViewModel.onCityChange(it)
+                        validateCity(state.value.ciudad)
+                    },
+                    label = { Text("Ciudad") },
                     keyboardOptions = KeyboardOptions(
                         keyboardType = KeyboardType.Text,
                         imeAction = ImeAction.Next,
@@ -238,7 +359,7 @@ fun RegisterScreen(
                     },
                     label = {
                         Text(
-                            text = "contraseña"
+                            text = "Contraseña"
                         )
                     },
                     keyboardOptions = KeyboardOptions(
@@ -357,6 +478,7 @@ fun RegisterScreen(
             onDismiss = registerViewModel::hideErrorDialog
         )
     }
+
 
     if (state.value.successRegister) {
         registerViewModel.registerDb()

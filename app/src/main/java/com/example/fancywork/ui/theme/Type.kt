@@ -53,7 +53,7 @@ val Typography = Typography(
     ),
     titleMedium = TextStyle(
         fontFamily = Roboto,
-        fontWeight = FontWeight.Normal,
+        fontWeight = FontWeight.Medium,
         fontSize = 14.sp
     ),
     titleSmall = TextStyle(

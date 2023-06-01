@@ -93,7 +93,7 @@ fun WelcomeScreen(
                 Column(
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(16.dp),
+                        .padding(30.dp),
                     verticalArrangement = Arrangement.Center,
                 ) {
                     Text(
@@ -251,6 +251,10 @@ fun WelcomeScreen(
     }
 
     if (state.value.successRegister) {
+        welcomeViewModel.registerDb()
+    }
+
+    if (state.value.successRegisterDB) {
         navigate.invoke()
     }
 }

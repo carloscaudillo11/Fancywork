@@ -23,9 +23,6 @@ fun SettingsScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                callback = {
-                    backStack.invoke()
-                },
                 scrollBehavior = scrollBehavior,
                 title = "Settings"
             )

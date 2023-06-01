@@ -19,7 +19,7 @@ fun RoundedButton(
     if(!displayProgressBar) {
         Button(
             modifier = modifier
-                .width(280.dp)
+                .width(250.dp)
                 .height(50.dp),
             onClick = onClick,
             enabled = enabled

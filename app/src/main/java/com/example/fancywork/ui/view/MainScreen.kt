@@ -5,21 +5,25 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.material3.*
-import androidx.compose.runtime.Composable
 import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-
+import com.example.fancywork.model.Service
+import com.example.fancywork.model.User
 import com.example.fancywork.ui.navegation.Destinations
 import com.example.fancywork.ui.viewmodel.HomeViewModel
+import com.example.fancywork.ui.viewmodel.MainViewModel
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
 fun MainScreen(
+    mainViewModel: MainViewModel,
     mainNavController: NavHostController
 ) {
     val navController = rememberNavController()
@@ -29,40 +33,66 @@ fun MainScreen(
         Destinations.Home,
         Destinations.Search,
         Destinations.Notifications,
-        Destinations.Profile,
     )
+    val state = mainViewModel.state
 
-    Scaffold(
-        bottomBar = {
-            NavigationBar {
-                itemsBar.forEach { item ->
-                    NavigationBarItem(
-                        icon = { Icon(item.icon, contentDescription = item.title) },
-                        label = { Text(item.title) },
-                        selected = currentRoute == item.route,
-                        onClick = {
-                            navController.navigate(item.route) {
-                                launchSingleTop = true
-                            }
-                        }
-                    )
-                }
+    if (state.value.isLoading) {
+        Surface(
+            modifier = Modifier.fillMaxSize(),
+            color = MaterialTheme.colorScheme.surface
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                CircularProgressIndicator()
             }
         }
-    ) {
-        NavigationGraph(
-            navController = navController,
-            mainNavController = mainNavController
-        )
+    } else {
+        Scaffold(
+            bottomBar = {
+                NavigationBar(
+                    containerColor = MaterialTheme.colorScheme.background
+                ) {
+                    itemsBar.forEach { item ->
+                        NavigationBarItem(
+                            icon = {
+                                Icon(
+                                    imageVector = item.icon,
+                                    contentDescription = item.title,
+                                )
+                            },
+                            label = { Text(item.title) },
+                            selected = currentRoute == item.route,
+                            onClick = {
+                                navController.navigate(item.route) {
+                                    launchSingleTop = true
+                                }
+                            }
+                        )
+                    }
+                }
+            }
+        ) {
+            NavigationGraph2(
+                user = state.value.user,
+                modifier = Modifier.padding(bottom = it.calculateBottomPadding()),
+                navController = navController,
+                mainNavController = mainNavController
+            )
+        }
     }
 }
 
 @Composable
-fun NavigationGraph(
+fun NavigationGraph2(
+    user: User?,
+    modifier: Modifier,
     navController: NavHostController,
     mainNavController: NavHostController
 ) {
     NavHost(
+        modifier = modifier,
         navController = navController,
         startDestination = Destinations.Home.route
     ) {
@@ -70,6 +100,7 @@ fun NavigationGraph(
             route = Destinations.Home.route
         ) {
             HomeScreen(
+                user = user,
                 homeViewModel = HomeViewModel(),
                 navController = mainNavController
             )
@@ -77,38 +108,17 @@ fun NavigationGraph(
         composable(
             route = Destinations.Search.route
         ) {
-            SearchScreen(
-                backStack = {
-                    navController.popBackStack()
-                }
-            )
+            SearchScreen()
         }
         composable(
             route = Destinations.Notifications.route
         ) {
-            NotificationScreen(
-                backStack = {
-                    navController.popBackStack()
-                }
-            )
+            NotificationScreen()
         }
         composable(
-            route = Destinations.Post.route
+            route = Destinations.Menu.route
         ) {
-            PostScreen(
-                callBack = {
-                    navController.popBackStack()
-                }
-            )
-        }
-        composable(
-            route = Destinations.Profile.route
-        ) {
-            ProfileScreen(
-                backStack = {
-                    navController.popBackStack()
-                }
-            )
+            MenuScreen()
         }
     }
 }

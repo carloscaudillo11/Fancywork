@@ -36,6 +36,22 @@ class RegisterViewModel(
         state.value = state.value.copy(userName = name)
     }
 
+    fun onCountryChange(pais: String) {
+        state.value = state.value.copy(pais = pais)
+    }
+
+    fun onStateChange(estado: String) {
+        state.value = state.value.copy(estado = estado)
+    }
+
+    fun onCityChange(ciudad: String) {
+        state.value = state.value.copy(ciudad = ciudad)
+    }
+
+    fun onUserLastNameChange(lastname: String) {
+        state.value = state.value.copy(userLastName = lastname)
+    }
+
     fun register() = viewModelScope.launch {
         state.value = state.value.copy(displayProgressBar = true)
         try {
@@ -68,12 +84,17 @@ class RegisterViewModel(
         try {
             val user = hashMapOf(
                 "name" to state.value.userName,
+                "lastname" to state.value.userLastName,
                 "phone" to state.value.userPhone,
+                "city" to state.value.ciudad,
+                "country" to state.value.pais,
+                "state" to state.value.estado,
+                "active" to true,
                 "email" to state.value.userEmail,
                 "password" to state.value.userPassword,
                 "url" to "https://e7.pngegg.com/pngimages/323/705/png-clipart-user-profile-get-em-cardiovascular-disease-zingah-avatar-miscellaneous-white.png"
             )
-            dbService.registerDB(
+            dbService.registerUserDB(
                 email = state.value.userEmail,
                 map = user
             ) { isSuccessful ->
@@ -99,8 +120,12 @@ class RegisterViewModel(
 
 data class RegisterState(
     val userName: String = "",
+    val userLastName: String = "",
     val userPhone: String = "",
     val userEmail: String = "",
+    val ciudad: String = "",
+    val pais: String = "",
+    val estado: String = "",
     val userPassword: String = "",
     val userConfirmPassword: String = "",
     val successRegister: Boolean = false,

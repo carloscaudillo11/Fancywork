@@ -15,7 +15,6 @@ import androidx.compose.ui.text.style.TextOverflow
 @Composable
 @ExperimentalMaterial3Api
 fun TopAppBar(
-    callback: () -> Unit,
     scrollBehavior: TopAppBarDefaults,
     title: String,
 ) {
@@ -26,18 +25,6 @@ fun TopAppBar(
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis
             )
-        },
-        navigationIcon = {
-            IconButton(
-                onClick = {
-                    callback.invoke()
-                }
-            ) {
-                Icon(
-                    imageVector = Icons.Filled.ArrowBack,
-                    contentDescription = "Icon back",
-                )
-            }
         },
         scrollBehavior = scrollBehavior.enterAlwaysScrollBehavior()
     )

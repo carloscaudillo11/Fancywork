@@ -12,7 +12,9 @@ import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 
-
+/* funcion utilizada parecida al RoundedButton usada para mostrar el boton
+    ya sea de google, facebook o correo.
+ */
 @Composable
 fun SocialButton(
     modifier: Modifier = Modifier,

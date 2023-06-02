@@ -9,7 +9,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.example.fancywork.R
 
-// Set of Material typography styles to start with
+
 val Roboto = FontFamily(
     Font(R.font.roboto_thin, FontWeight.Thin),
     Font(R.font.roboto_light, FontWeight.Light),

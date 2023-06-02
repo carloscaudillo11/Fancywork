@@ -21,6 +21,9 @@ class WelcomeViewModel(
 
     val email = auth.currentUser?.email
 
+    /* Esta funcion sirve para llamar a la funcion del modelo que crea un usuaria
+        en auth firebase por medio de google.
+    */
     fun googleSignIn(
         token: String,
     ) = viewModelScope.launch {
@@ -39,6 +42,10 @@ class WelcomeViewModel(
         }
     }
 
+    /* Esta funcion sirve para llamar a la funcion del modelo que guarda
+       en la base de datos los datos de un usuario cuando se registra
+       ya sea con google o por correo.
+    */
     fun registerDb() = viewModelScope.launch {
         try {
             val user = hashMapOf(
@@ -70,6 +77,7 @@ class WelcomeViewModel(
         }
     }
 
+    /*  Esta funcion sirve para poder quitar los alert de error de esta pantalla. */
     fun hideErrorDialog() {
         state.value = state.value.copy(
             errorMessage = null
@@ -77,6 +85,10 @@ class WelcomeViewModel(
     }
 }
 
+    /*  En esta clase se definen los diferentes estados de la interfaz o pantalla
+        que el viewmodel se encargara de modificar para que la pantalla lo pueda
+        mostrar.
+    */
 data class WelcomeState(
     val successRegister: Boolean = false,
     val successRegisterDB: Boolean = false,

@@ -16,42 +16,73 @@ class RegisterViewModel(
     var state: MutableState<RegisterState> = mutableStateOf(RegisterState())
         private set
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onUserEmailChange(email: String) {
         state.value = state.value.copy(userEmail = email)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onUserPasswordChange(password: String) {
         state.value = state.value.copy(userPassword = password)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+            para que al escribir en el este muestre el texto
+        */
     fun onUserConfirmPasswordChange(confirmPass: String) {
         state.value = state.value.copy(userConfirmPassword = confirmPass)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+            para que al escribir en el este muestre el texto
+        */
     fun onUserPhoneChange(phone: String) {
         state.value = state.value.copy(userPhone = phone)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onUserNameChange(name: String) {
         state.value = state.value.copy(userName = name)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onCountryChange(pais: String) {
         state.value = state.value.copy(pais = pais)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onStateChange(estado: String) {
         state.value = state.value.copy(estado = estado)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onCityChange(ciudad: String) {
         state.value = state.value.copy(ciudad = ciudad)
     }
 
+    /*  Esta funcion sirve para cambiar el estado del campo en cuestión al momento de escribir
+        para que al escribir en el este muestre el texto
+    */
     fun onUserLastNameChange(lastname: String) {
         state.value = state.value.copy(userLastName = lastname)
     }
 
+    /* Esta funcion sirve para llamar a la funcion del modelo que guarda
+       en la base de datos los datos de un usuario cuando se registra
+       ya sea con google o por correo.
+    */
     fun register() = viewModelScope.launch {
         state.value = state.value.copy(displayProgressBar = true)
         try {
@@ -79,7 +110,10 @@ class RegisterViewModel(
         }
     }
 
-
+    /* Esta funcion sirve para llamar a la funcion del modelo que guarda
+       en la base de datos los datos de un usuario cuando se registra
+       ya sea con google o por correo.
+    */
     fun registerDb() = viewModelScope.launch {
         try {
             val user = hashMapOf(
@@ -111,6 +145,7 @@ class RegisterViewModel(
         }
     }
 
+    /*  Esta funcion sirve para poder quitar los alert de error de esta pantalla. */
     fun hideErrorDialog() {
         state.value = state.value.copy(
             errorMessage = null
@@ -118,6 +153,10 @@ class RegisterViewModel(
     }
 }
 
+    /*  En esta clase se definen los diferentes estados de la interfaz o pantalla
+        que el viewmodel se encargara de modificar para que la pantalla lo pueda
+        mostrar.
+    */
 data class RegisterState(
     val userName: String = "",
     val userLastName: String = "",

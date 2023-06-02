@@ -18,6 +18,9 @@ import com.example.fancywork.ui.viewmodel.MainViewModel
 import com.example.fancywork.ui.viewmodel.WelcomeViewModel
 import com.google.firebase.auth.FirebaseAuth
 
+/* funcion que se encarga de administrar las rutas y navegación de las
+    pantallas en la rama principal de la aplicación.
+ */
 @Composable
 fun NavigationGraph() {
     val navController = rememberNavController()

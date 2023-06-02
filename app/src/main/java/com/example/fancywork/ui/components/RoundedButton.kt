@@ -8,6 +8,13 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
+
+/* funcion utilizada para devolver un boton que acepta como parametros un
+    modificador para poder cambiar su apariencia, el texto que queremos
+    que muestre, una variable booleana para que en caso que sea true
+    muestre una barra de progreso, la funcion que invocara al hacer click
+    y una variable booleana para activar o desactivar el boton.
+ */
 @Composable
 fun RoundedButton(
     modifier: Modifier = Modifier,

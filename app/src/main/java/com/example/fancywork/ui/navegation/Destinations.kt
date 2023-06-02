@@ -2,9 +2,11 @@ package com.example.fancywork.ui.navegation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material.icons.outlined.*
 import androidx.compose.ui.graphics.vector.ImageVector
+
+/* clase utilizada para definir las diferentes rutas del menu principal
+ */
 
 sealed class Destinations(
     val route: String,
@@ -24,10 +26,5 @@ sealed class Destinations(
     object Notifications : Destinations(
         "notifications", "Notificaciones",
         Icons.Outlined.Notifications
-    )
-
-    object Menu : Destinations(
-        "Menu", "Menu",
-        Icons.Filled.Menu
     )
 }

@@ -9,14 +9,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.example.fancywork.model.Service
-import com.example.fancywork.model.User
 import com.example.fancywork.ui.navegation.Destinations
-import com.example.fancywork.ui.viewmodel.HomeViewModel
+import com.example.fancywork.ui.navegation.NavigationGraph2
 import com.example.fancywork.ui.viewmodel.MainViewModel
 
 
@@ -80,45 +76,6 @@ fun MainScreen(
                 navController = navController,
                 mainNavController = mainNavController
             )
-        }
-    }
-}
-
-@Composable
-fun NavigationGraph2(
-    user: User?,
-    modifier: Modifier,
-    navController: NavHostController,
-    mainNavController: NavHostController
-) {
-    NavHost(
-        modifier = modifier,
-        navController = navController,
-        startDestination = Destinations.Home.route
-    ) {
-        composable(
-            route = Destinations.Home.route
-        ) {
-            HomeScreen(
-                user = user,
-                homeViewModel = HomeViewModel(),
-                navController = mainNavController
-            )
-        }
-        composable(
-            route = Destinations.Search.route
-        ) {
-            SearchScreen()
-        }
-        composable(
-            route = Destinations.Notifications.route
-        ) {
-            NotificationScreen()
-        }
-        composable(
-            route = Destinations.Menu.route
-        ) {
-            MenuScreen()
         }
     }
 }

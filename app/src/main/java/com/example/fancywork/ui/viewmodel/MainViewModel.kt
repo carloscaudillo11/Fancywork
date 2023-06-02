@@ -106,6 +106,10 @@ class MainViewModel(
     }
 }
 
+    /*  En esta clase se definen los diferentes estados de la interfaz o pantalla
+        que el viewmodel se encargara de modificar para que la pantalla lo pueda
+        mostrar.
+    */
 data class MainState(
     val isLoading: Boolean = false,
     val errorMessage: String? = null,

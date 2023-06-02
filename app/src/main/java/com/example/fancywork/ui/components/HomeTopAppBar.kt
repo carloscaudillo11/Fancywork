@@ -16,6 +16,13 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import com.example.fancywork.R
 
+/* funcion utilizada para devolver la Topappbar de cada pantalla donde
+    acepta como parametro el controlador de la barra para que
+    pueda esconderse al hacer slide en la pantalla que se invoque
+    tambien acepta una funcion que ejecutara cada que presionen el
+    icono de regresar y por ultimo una url que mostrara la foto de
+    cada usuario en la parte superior derecha.
+ */
 @Composable
 @ExperimentalMaterial3Api
 fun HomeTopAppBar(

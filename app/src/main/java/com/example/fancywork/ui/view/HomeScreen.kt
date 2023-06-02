@@ -24,7 +24,6 @@ import com.example.fancywork.ui.components.ErrorDialog
 import com.example.fancywork.ui.components.GoogleCard
 import com.example.fancywork.ui.components.HomeTopAppBar
 import com.example.fancywork.ui.viewmodel.HomeViewModel
-import org.jetbrains.annotations.NotNull
 
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -101,7 +100,6 @@ fun HomeScreen(
                 }
 
                 CardService(
-                    user = user,
                     items = state.value.services,
                     navController= navController
                 )
@@ -122,7 +120,6 @@ fun HomeScreen(
                     )
                 }
                 CardService(
-                    user = user,
                     items = state.value.services,
                     navController= navController
                 )

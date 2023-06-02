@@ -4,17 +4,18 @@ import com.example.fancywork.model.Result
 import com.example.fancywork.model.Service
 import com.example.fancywork.model.User
 import com.google.firebase.firestore.ktx.firestore
-
 import com.google.firebase.ktx.Firebase
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
-
 class DBService {
     private val db = Firebase.firestore
 
+    /* Funcion que trabaja en segundo plano para guardar en la base de datos la
+       información de cada usuario al momento de registrarse.
+    */
     suspend fun registerUserDB(
         email: String?,
         map: Map<String, Any?>,
@@ -29,7 +30,9 @@ class DBService {
                 }.await()
         }
     }
-
+    /* Funcion que trabaja en segundo plano para guardar en la base de datos la
+       información de cada servicio publicado.
+    */
     suspend fun registerServiceDB(
         map: Map<String, Any?>,
         onComplete: (Boolean) -> Unit
@@ -42,6 +45,9 @@ class DBService {
             }.await()
     }
 
+    /* Funcion que trabaja en segundo plano para obtener la información de los
+       usuarios registrados.
+   */
     fun getUser(email: String): Flow<Result<User>> = flow {
         try {
             emit(Result.Loading())
@@ -55,7 +61,9 @@ class DBService {
             emit(Result.Error(message = ex.localizedMessage ?: "Error"))
         }
     }
-
+    /* Funcion que trabaja en segundo plano para obtener la información de todos
+       los servicios registrados.
+   */
     fun getServices(): Flow<Result<List<Service>>> = flow {
         try {
             emit(Result.Loading())
@@ -70,7 +78,9 @@ class DBService {
             emit(Result.Error(message = ex.localizedMessage ?: "Error"))
         }
     }
-
+    /* Funcion que trabaja en segundo plano para obtener la información de
+       los servicios registrados por email para la pantalla de detalles.
+   */
     fun getService(email: String): Flow<Result<List<Service>>> = flow {
         try {
             emit(Result.Loading())

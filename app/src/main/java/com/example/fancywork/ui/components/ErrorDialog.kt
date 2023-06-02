@@ -13,6 +13,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 
+/* funcion utilizada para devolver un mensaje de alert para mostrar mensajes
+    de errores que se le pasen por parametro tambien acepta la funcion
+    que ejecutara cuando pulsemos el boton de esconder en el alert.
+ */
 @Composable
 fun ErrorDialog(
     errorMessage: String?,

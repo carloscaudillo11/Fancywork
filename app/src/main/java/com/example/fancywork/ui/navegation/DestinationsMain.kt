@@ -4,7 +4,9 @@ import androidx.navigation.NamedNavArgument
 import androidx.navigation.NavType
 import androidx.navigation.navArgument
 
-
+/* clase utilizada para definir las diferentes rutas de la rama principal
+    de la aplicación.
+ */
 sealed class DestinationsMain(
     val route: String,
     val arguments: List<NamedNavArgument>

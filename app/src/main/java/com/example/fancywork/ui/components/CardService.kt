@@ -31,12 +31,17 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.fancywork.model.Service
-import com.example.fancywork.model.User
 
+
+/* funcion utilizada para devolver un slider de tarjetas con la
+    informacion de cada item de una lista en este caso es usado
+    para mostrar la lista de servicios por localidad tambien acepta
+    un controlador de navegación para poder navegar a la pantalla
+    de detalles de cada item.
+ */
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun CardService(
-    user: User?,
     items: List<Service>,
     navController: NavHostController
 ) {

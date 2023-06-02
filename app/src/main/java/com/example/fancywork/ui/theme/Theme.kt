@@ -1,6 +1,5 @@
 package com.example.fancywork.ui.theme
 
-
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
+// variable usada para deinir los colores del modo oscuro
 private val DarkColorScheme = darkColorScheme(
     primary = md_theme_dark_primary,
     onPrimary = md_theme_dark_onPrimary,
@@ -42,9 +42,9 @@ private val DarkColorScheme = darkColorScheme(
     surfaceTint = md_theme_dark_surfaceTint,
     outlineVariant = md_theme_dark_outlineVariant,
     scrim = md_theme_dark_scrim
-
 )
 
+// variable usada para deinir los colores del modo claro
 private val LightColorScheme = lightColorScheme(
     primary = md_theme_light_primary,
     onPrimary = md_theme_light_onPrimary,
@@ -77,6 +77,9 @@ private val LightColorScheme = lightColorScheme(
     scrim = md_theme_light_scrim,
 )
 
+/*  funcion usada para definir todas las propiedades antes indicadas y devolver un objeto
+    de tipo theme y poder aplicar el tema a diferentes componentes de ui.
+*/
 @Composable
 fun FancyWorkTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
